@@ -8,940 +8,835 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style type="text/css" id="static">
-        /*Font support for MAC*/
-        @font-face {
-          font-family: "Century Gothic";
-          font-weight: normal;
-          font-style: normal;
-          src: local("Century Gothic"),
-            url("/blobcontent/zty/fonts/CenturyGothic.ttf")
-              format("truetype");
-        }
-        @font-face {
-          font-family: "Century Gothic";
-          font-weight: bold;
-          font-style: normal;
-          src: local("Century Gothic Bold"),
-            url("/blobcontent/zty/fonts/CenturyGothicBold.ttf")
-              format("truetype");
-        }
-        @font-face {
-          font-family: "Century Gothic";
-          font-weight: bold;
-          font-style: italic;
-          src: local("Century Gothic Bold Italic"),
-            url("/blobcontent/zty/fonts/CenturyGothicBoldItalic.ttf")
-              format("truetype");
-        }
-        @font-face {
-          font-family: "Century Gothic";
-          font-weight: normal;
-          font-style: italic;
-          src: local("Century Gothic Italic"),
-            url("/blobcontent/zty/fonts/CenturyGothicItalic.ttf")
-              format("truetype");
-        }
+      .my-links {
+        color: darkblue !important;
+        font-weight: lighter !important;
+      }
+      /*Font support for MAC*/
+      @font-face {
+        font-family: "Century Gothic";
+        font-weight: normal;
+        font-style: normal;
+        src: local("Century Gothic"),
+          url("/blobcontent/zty/fonts/CenturyGothic.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "Century Gothic";
+        font-weight: bold;
+        font-style: normal;
+        src: local("Century Gothic Bold"),
+          url("/blobcontent/zty/fonts/CenturyGothicBold.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "Century Gothic";
+        font-weight: bold;
+        font-style: italic;
+        src: local("Century Gothic Bold Italic"),
+          url("/blobcontent/zty/fonts/CenturyGothicBoldItalic.ttf")
+            format("truetype");
+      }
+      @font-face {
+        font-family: "Century Gothic";
+        font-weight: normal;
+        font-style: italic;
+        src: local("Century Gothic Italic"),
+          url("/blobcontent/zty/fonts/CenturyGothicItalic.ttf")
+            format("truetype");
+      }
 
-        html,
-        body,
-        div,
-        span,
-        applet,
-        object,
-        iframe,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        blockquote,
-        pre,
-        a,
-        abbr,
-        acronym,
-        address,
-        big,
-        cite,
-        code,
-        del,
-        dfn,
-        em,
-        font,
-        img,
-        ins,
-        kbd,
-        q,
-        s,
-        samp,
-        small,
-        strike,
-        strong,
-        sub,
-        sup,
-        tt,
-        var,
-        b,
-        u,
-        i,
-        center,
-        dl,
-        dt,
-        dd,
-        ol,
-        ul,
-        li,
-        fieldset,
-        form,
-        label,
-        legend,
-        table,
-        caption,
-        tbody,
-        tfoot,
-        thead,
-        tr,
-        th,
-        td {
-          margin: 0;
-          padding: 0;
-          border: 0;
-          outline: 0;
-          vertical-align: baseline;
-          background: transparent;
-        }
-        body {
-          text-align: left;
-          font-feature-settings: "liga" 0;
-          -moz-font-feature-settings: "liga" off;
-        }
-        .skn-srz2 ol,
-        .skn-srz2 ul {
-          list-style: none;
-        }
-        .skn-srz2 table {
-          border-collapse: collapse;
-          border-spacing: 0;
-          font-size: inherit;
-          color: inherit;
-          width: 100%;
-        }
-        .skn-srz2 .word-break {
-          word-wrap: break-word;
-        }
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      font,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        vertical-align: baseline;
+        background: transparent;
+      }
+      body {
+        text-align: left;
+        font-feature-settings: "liga" 0;
+        -moz-font-feature-settings: "liga" off;
+      }
+      .skn-srz2 ol,
+      .skn-srz2 ul {
+        list-style: none;
+      }
+      .skn-srz2 table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: inherit;
+        color: inherit;
+        width: 100%;
+      }
+      .skn-srz2 .word-break {
+        word-wrap: break-word;
+      }
 
-        /*START content disc style for LI*/
-        .skn-srz2 ul,
-        .skn-srz2 li {
-          margin: 0;
-          padding: 0;
-          list-style-type: disc;
-        }
+      /*START content disc style for LI*/
+      .skn-srz2 ul,
+      .skn-srz2 li {
+        margin: 0;
+        padding: 0;
+        list-style-type: disc;
+      }
+      .skn-srz2 ul li {
+        margin: 0 0 0 16px;
+        padding: 0;
+      }
+      @-moz-document url-prefix() {
         .skn-srz2 ul li {
-          margin: 0 0 0 16px;
-          padding: 0;
+          margin: 0 0 0 12px;
+          padding: 0 0 0 3px;
         }
-        @-moz-document url-prefix() {
-          .skn-srz2 ul li {
-            margin: 0 0 0 12px;
-            padding: 0 0 0 3px;
-          }
-        }
-        /*END content disc style for LI*/
+      }
+      /*END content disc style for LI*/
 
-        .skn-srz2 {
-          border-left: 120px solid #002e58 !important;
-          table-layout: fixed;
-          word-wrap: break-word;
-          box-sizing: border-box;
-          padding: 25px;
-          min-height: 792px;
-        }
-        .skn-srz2.hmargins {
-          padding-left: 12px !important;
-          padding-right: 24px !important;
-        }
-        .skn-srz2 .name {
-          color: #002e58;
-          font-size: 15px;
-          line-height: 17px;
-          font-weight: bold;
-          padding: 0;
-          text-align: left;
-        }
-        .skn-srz2 .paragraph {
-          position: relative;
-          clear: both;
-          min-height: 10px;
-        }
-        .skn-srz2 .heading {
-          clear: both;
-          color: #002e58;
-          font-weight: bold;
-        }
-        .skn-srz2 .address {
-          position: relative;
-          text-align: left;
-          font-size: 0.917em;
-          line-height: 1.25em;
-          margin-top: 0;
-          position: inherit;
-          z-index: 2;
-          display: table;
-          table-layout: fixed;
-          width: 100%;
-          word-wrap: break-word;
-        }
-        .skn-srz2 .table_wrapper {
-          width: 100%;
-          margin-top: 0;
-        }
-        .skn-srz2 table.twocol td {
-          width: 50%;
-        }
-        .skn-srz2 table.skills {
-          width: 100%;
-        }
-        .skn-srz2 table.skills th,
-        .skn-srz2 table.skills td {
-          width: 20%;
-          text-align: center;
-        }
-        .skn-srz2 table.skills th {
-          text-decoration: underline;
-        }
-        .skn-srz2 table.skills .skillname,
-        .skn-srz2 table.skills .skillrating {
-          text-align: left;
-          width: 35%;
-        }
-        .skn-srz2 table.skills .skillrating {
-          width: 20%;
-        }
-        .skn-srz2 table.skills .skillyears,
-        .skn-srz2 table.skills .skilllast {
-          width: 19%;
-        }
-        .skn-srz2 table.skills .pad1 {
-          width: 5%;
-        }
-        .skn-srz2 table.skills .pad2,
-        .skn-srz2 table.skills .pad3 {
-          width: 1%;
-        }
-        .skn-srz2 span.paddedline {
-          display: block;
-        }
-        .skn-srz2 span.jobtitle,
-        .skn-srz2 span.degree,
-        .skn-srz2 span.programline {
-          font-weight: bold;
-        }
-        .skn-srz2 .paragraph .dates_wrapper {
-          font-weight: bold;
-          display: block;
-          text-align: right;
-          color: #fff;
-          position: absolute;
-          left: -160px;
-          float: none;
-          margin-left: 0 !important;
-          width: 100px !important;
-        }
-        .skn-srz2 .singlecolumn {
-          position: relative;
-        }
-        .skn-srz2 .txtItalics {
-          font-style: italic;
-        }
-        .skn-srz2 .txtBold {
-          font-weight: bold;
-        }
-        .skn-srz2 .resumeTitle {
-          text-align: left;
-          color: #002e58;
-          font-weight: 400;
-        }
-        .skn-srz2 td.twocol_2 {
-          border-left: 1px solid #fefdfd;
-        }
-        .skn-srz2 .addressLeft,
-        .skn-srz2 .addressRight {
-          display: table-cell;
-          width: 40%;
-        }
-        .skn-srz2 .ratingfield p {
-          display: inline;
-        }
+      .skn-srz2 {
+        border-left: 120px solid #002e58 !important;
+        table-layout: fixed;
+        word-wrap: break-word;
+        box-sizing: border-box;
+        padding: 25px;
+        min-height: 792px;
+      }
+      .skn-srz2.hmargins {
+        padding-left: 12px !important;
+        padding-right: 24px !important;
+      }
+      .skn-srz2 .name {
+        color: #002e58;
+        font-size: 15px;
+        line-height: 17px;
+        font-weight: bold;
+        padding: 0;
+        text-align: left;
+      }
+      .skn-srz2 .paragraph {
+        position: relative;
+        clear: both;
+        min-height: 10px;
+      }
+      .skn-srz2 .heading {
+        clear: both;
+        color: #002e58;
+        font-weight: bold;
+      }
+      .skn-srz2 .address {
+        position: relative;
+        text-align: left;
+        font-size: 0.917em;
+        line-height: 1.25em;
+        margin-top: 0;
+        position: inherit;
+        z-index: 2;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        word-wrap: break-word;
+      }
+      .skn-srz2 .table_wrapper {
+        width: 100%;
+        margin-top: 0;
+      }
+      .skn-srz2 table.twocol td {
+        width: 50%;
+      }
+      .skn-srz2 table.skills {
+        width: 100%;
+      }
+      .skn-srz2 table.skills th,
+      .skn-srz2 table.skills td {
+        width: 20%;
+        text-align: center;
+      }
+      .skn-srz2 table.skills th {
+        text-decoration: underline;
+      }
+      .skn-srz2 table.skills .skillname,
+      .skn-srz2 table.skills .skillrating {
+        text-align: left;
+        width: 35%;
+      }
+      .skn-srz2 table.skills .skillrating {
+        width: 20%;
+      }
+      .skn-srz2 table.skills .skillyears,
+      .skn-srz2 table.skills .skilllast {
+        width: 19%;
+      }
+      .skn-srz2 table.skills .pad1 {
+        width: 5%;
+      }
+      .skn-srz2 table.skills .pad2,
+      .skn-srz2 table.skills .pad3 {
+        width: 1%;
+      }
+      .skn-srz2 span.paddedline {
+        display: block;
+      }
+      .skn-srz2 span.jobtitle,
+      .skn-srz2 span.degree,
+      .skn-srz2 span.programline {
+        font-weight: bold;
+      }
+      .skn-srz2 .paragraph .dates_wrapper {
+        font-weight: bold;
+        display: block;
+        text-align: right;
+        color: #fff;
+        position: absolute;
+        left: -160px;
+        float: none;
+        margin-left: 0 !important;
+        width: 100px !important;
+      }
+      .skn-srz2 .singlecolumn {
+        position: relative;
+      }
+      .skn-srz2 .txtItalics {
+        font-style: italic;
+      }
+      .skn-srz2 .txtBold {
+        font-weight: bold;
+      }
+      .skn-srz2 .resumeTitle {
+        text-align: left;
+        color: #002e58;
+        font-weight: 400;
+      }
+      .skn-srz2 td.twocol_2 {
+        border-left: 1px solid #fefdfd;
+      }
+      .skn-srz2 .addressLeft,
+      .skn-srz2 .addressRight {
+        display: table-cell;
+        width: 40%;
+      }
+      .skn-srz2 .ratingfield p {
+        display: inline;
+      }
 
-        /*Personal details section*/
-        .skn-srz2 .details-wrap {
-          margin-bottom: 7px;
-        }
-        .skn-srz2 .details-wrap:last-child,
-        .skn-srz2 .details-wrap:nth-last-child(2) {
-          margin-bottom: 0;
-        }
-        .skn-srz2 .pdet-sec .headingIcon svg path {
-          fill: transparent;
-          stroke: #fff;
-        }
-        .skn-srz2 .pdet-sec .singlecolumn {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-        }
-        .skn-srz2 .details-wrap {
-          width: 49%;
-        }
+      /*Personal details section*/
+      .skn-srz2 .details-wrap {
+        margin-bottom: 7px;
+      }
+      .skn-srz2 .details-wrap:last-child,
+      .skn-srz2 .details-wrap:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+      .skn-srz2 .pdet-sec .headingIcon svg path {
+        fill: transparent;
+        stroke: #fff;
+      }
+      .skn-srz2 .pdet-sec .singlecolumn {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .skn-srz2 .details-wrap {
+        width: 49%;
+      }
 
-        /*topsection css*/
-        .skn-srz2 .topsection {
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .skn-srz2 .left-box,
-        .skn-srz2 .right-box {
-          display: table-cell;
-          vertical-align: top;
-        }
-        .skn-srz2 .left-box {
-          box-sizing: initial;
-          position: relative;
-          width: 100%;
-        }
-        .skn-srz2 .left-box {
-          width: 70%;
-          flex-grow: 1;
-        }
+      /*topsection css*/
+      .skn-srz2 .topsection {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .skn-srz2 .left-box,
+      .skn-srz2 .right-box {
+        display: table-cell;
+        vertical-align: top;
+      }
+      .skn-srz2 .left-box {
+        box-sizing: initial;
+        position: relative;
+        width: 100%;
+      }
+      .skn-srz2 .left-box {
+        width: 70%;
+        flex-grow: 1;
+      }
 
-        /*Timeline classes*/
-        .skn-srz2 .section {
-          border-left: 1px solid #ccc;
-          padding-left: 25px;
-          margin-left: 12px;
-          position: relative;
-        }
-        .skn-srz2 .notdraggable {
-          border: none;
-          margin-left: 0;
-          padding-left: 0;
-        }
-        .skn-srz2 .heading,
-        .skn-srz2 .paragraph {
-          position: relative;
-        }
-        .skn-srz2 .singlecolumn:before {
-          display: block;
-          position: absolute;
-          top: 0;
-          left: -30px;
-          content: "";
-          height: 8px;
-          width: 8px;
-          border: 0;
-          background: #002e58;
-          z-index: 2;
-          border-radius: 100%;
-        }
-        .skn-srz2 .summary .singlecolumn:before {
-          display: none;
-        }
-        .skn-srz2
-          .notdraggable
-          + .section:not(.notdraggable):before {
-          border: 1px solid #fff;
-          content: "";
-          position: absolute;
-          top: 0;
-          left: -2px;
-          width: 3px;
-          background: #fff;
-        }
-        .skn-srz2 .paragraph + tr.paragraph:before,
-        .skn-srz2 .hide-bar .noLnht,
-        .skn-srz2 .hide-bar .field-ratt,
-        .skn-srz2
-          .hide-bar
-          .ratingWrapper
-          .paddedline {
-          display: none;
-        }
-        .skn-srz2 .headingIcon svg circle {
-          fill: #002e58;
-        }
+      /*Timeline classes*/
+      .skn-srz2 .section {
+        border-left: 1px solid #ccc;
+        padding-left: 25px;
+        margin-left: 12px;
+        position: relative;
+      }
+      .skn-srz2 .notdraggable {
+        border: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+      .skn-srz2 .heading,
+      .skn-srz2 .paragraph {
+        position: relative;
+      }
+      .skn-srz2 .singlecolumn:before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -30px;
+        content: "";
+        height: 8px;
+        width: 8px;
+        border: 0;
+        background: #002e58;
+        z-index: 2;
+        border-radius: 100%;
+      }
+      .skn-srz2 .summary .singlecolumn:before {
+        display: none;
+      }
+      .skn-srz2 .notdraggable + .section:not(.notdraggable):before {
+        border: 1px solid #fff;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -2px;
+        width: 3px;
+        background: #fff;
+      }
+      .skn-srz2 .paragraph + tr.paragraph:before,
+      .skn-srz2 .hide-bar .noLnht,
+      .skn-srz2 .hide-bar .field-ratt,
+      .skn-srz2 .hide-bar .ratingWrapper .paddedline {
+        display: none;
+      }
+      .skn-srz2 .headingIcon svg circle {
+        fill: #002e58;
+      }
 
-        /*Icons and Rating*/
-        .skn-srz2 .headingIcon {
-          z-index: 4;
-          left: -40px;
-          position: absolute;
-        }
-        .skn-srz2 .headingIcon svg {
-          width: 30px;
-          height: 30px;
-        }
-        .skn-srz2 .headingIcon svg path {
-          fill: #fff;
-        }
-        .skn-srz2 .iconRow {
-          clear: both;
-          padding-bottom: 7px;
-          word-wrap: break-word;
-        }
-        .skn-srz2 .iconRow:last-child {
-          padding-bottom: 0;
-        }
-        .skn-srz2 .iconRow .iconSvg {
-          width: 20px;
-          height: 20px;
-          float: left;
-          margin-right: 5px;
-        }
-        .skn-srz2 .iconRow svg circle {
-          fill: #002e58;
-        }
-        .skn-srz2 .iconRow svg path {
-          fill: #fff;
-        }
-        .skn-srz2 .iconRow .icoTxt {
-          margin-left: 25px;
-          padding-right: 5px;
-        }
-        .skn-srz2 .ratingWrapper {
-          width: 150px;
-          float: right;
-          text-align: right;
-        }
-        .skn-srz2 .ratingWrapper .noLnht {
-          line-height: 0;
-        }
-        .skn-srz2 .ratingWrapper svg {
-          height: 13px;
-          margin-top: 2px;
-        }
-        .skn-srz2 .ratingWrapper svg .default-fill {
-          fill: #002e58;
-        }
-        .skn-srz2 .sortable-item .ratingWrapper span {
-          top: 0;
-        }
+      /*Icons and Rating*/
+      .skn-srz2 .headingIcon {
+        z-index: 4;
+        left: -40px;
+        position: absolute;
+      }
+      .skn-srz2 .headingIcon svg {
+        width: 30px;
+        height: 30px;
+      }
+      .skn-srz2 .headingIcon svg path {
+        fill: #fff;
+      }
+      .skn-srz2 .iconRow {
+        clear: both;
+        padding-bottom: 7px;
+        word-wrap: break-word;
+      }
+      .skn-srz2 .iconRow:last-child {
+        padding-bottom: 0;
+      }
+      .skn-srz2 .iconRow .iconSvg {
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin-right: 5px;
+      }
+      .skn-srz2 .iconRow svg circle {
+        fill: #002e58;
+      }
+      .skn-srz2 .iconRow svg path {
+        fill: #fff;
+      }
+      .skn-srz2 .iconRow .icoTxt {
+        margin-left: 25px;
+        padding-right: 5px;
+      }
+      .skn-srz2 .ratingWrapper {
+        width: 150px;
+        float: right;
+        text-align: right;
+      }
+      .skn-srz2 .ratingWrapper .noLnht {
+        line-height: 0;
+      }
+      .skn-srz2 .ratingWrapper svg {
+        height: 13px;
+        margin-top: 2px;
+      }
+      .skn-srz2 .ratingWrapper svg .default-fill {
+        fill: #002e58;
+      }
+      .skn-srz2 .sortable-item .ratingWrapper span {
+        top: 0;
+      }
 
-        /*PICT*/
-        .skn-srz2 .prflPic,
-        .skn-srz2 .prflPic > div {
-          width: 124px;
-          height: 124px;
-        }
-        .skn-srz2 .prflPic img {
-          min-width: 100%;
-          max-width: 100%;
-          min-height: 100%;
-          max-height: 100%;
-          object-fit: cover;
-        }
+      /*PICT*/
+      .skn-srz2 .prflPic,
+      .skn-srz2 .prflPic > div {
+        width: 124px;
+        height: 124px;
+      }
+      .skn-srz2 .prflPic img {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
 
-        .skn-srz2 .multi-hilt .paddedline {
-          display: table-cell;
-          width: 50%;
-          padding-left: 7px;
-        }
-        .skn-srz2
-          .multi-hilt
-          .paddedline:first-child {
-          padding-left: 0;
-          padding-right: 7px;
-        }
-        .skn-srz2 .multi-hilt ul li:before {
-          display: none;
-        }
-        .skn-srz2 .multi-hilt .singlecolumn {
-          display: table;
-          table-layout: fixed;
-          width: 100%;
-        }
-        .skn-srz2 .multi-hilt ul li {
-          margin-bottom: 5px;
-        }
-        .skn-srz2 .multi-hilt ul li:last-child {
-          margin-bottom: 0;
-        }
+      .skn-srz2 .multi-hilt .paddedline {
+        display: table-cell;
+        width: 50%;
+        padding-left: 7px;
+      }
+      .skn-srz2 .multi-hilt .paddedline:first-child {
+        padding-left: 0;
+        padding-right: 7px;
+      }
+      .skn-srz2 .multi-hilt ul li:before {
+        display: none;
+      }
+      .skn-srz2 .multi-hilt .singlecolumn {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+      }
+      .skn-srz2 .multi-hilt ul li {
+        margin-bottom: 5px;
+      }
+      .skn-srz2 .multi-hilt ul li:last-child {
+        margin-bottom: 0;
+      }
 
-        /* Languages Starts Here */
-        .skn-srz2 .txt-bold {
-          font-weight: 700;
-        }
-        .skn-srz2 .beforecolonspace {
-          display: none !important;
-        }
-        .skn-srz2.show-colon-space .beforecolonspace {
-          display: inline !important;
-        }
+      /* Languages Starts Here */
+      .skn-srz2 .txt-bold {
+        font-weight: 700;
+      }
+      .skn-srz2 .beforecolonspace {
+        display: none !important;
+      }
+      .skn-srz2.show-colon-space .beforecolonspace {
+        display: inline !important;
+      }
 
-        /*Static CSS - common wider box*/
-        .skn-srz2 .common-lngg-skli .singlecolumn {
-          display: none;
-          margin: 0 !important;
-        }
-        .skn-srz2
-          .common-lngg-skli.infobarsec
-          .infobarpara,
-        .skn-srz2
-          .common-lngg-skli.infotilesec
-          .infotilepara {
-          display: block;
-        }
-        .skn-srz2 .common-lngg-skli .rating-heading {
-          flex: 1;
-        }
-        .skn-srz2 .common-lngg-skli .rating-level {
-          width: 15%;
-          text-align: right;
-        }
-        .skn-srz2
-          .common-lngg-skli
-          .rating-level:empty,
-        .skn-srz2
-          .common-lngg-skli.infocirclesec
-          .infocirclepara
-          .rating-level:empty {
-          display: none;
-        }
-        .skn-srz2
-          .common-lngg-skli
-          .sliced-rect
-          .sliced-rect-tile {
-          height: 100%;
-          background-color: #d5d6d6;
-          float: left;
-          margin-right: 3px;
-        }
-        .skn-srz2
-          .common-lngg-skli
-          .sliced-rect
-          .sliced-rect-tile:last-child {
-          margin-right: 0;
-        }
-        .skn-srz2
-          .common-lngg-skli
-          .nativeLangPara.paragraph {
-          width: 100% !important;
-          max-width: 100%;
-        }
-        .skn-srz2
-          .common-lngg-skli.infobarsec
-          .field
-          .colon,
-        .skn-srz2
-          .common-lngg-skli.infotilesec
-          .field
-          .colon {
-          display: none;
-        }
-        .skn-srz2
-          .common-lngg-skli.infobarsec
-          .field:first-child
-          .colon,
-        .skn-srz2
-          .common-lngg-skli.infotilesec
-          .field:first-child
-          .colon,
-        .skn-srz2 .common-lngg-skli .field *,
-        .skn-srz2
-          .common-lngg-skli
-          .nativeLangPara
-          .field {
-          display: inline;
-        }
-        .skn-srz2 .common-lngg-skli .sliced-rect,
-        .skn-srz2 .common-lngg-skli .inner-rating {
-          height: 7px;
-        }
-        .skn-srz2 .common-lngg-skli .fielditem-ratt,
-        .skn-srz2 .common-lngg-skli .lang-scale {
-          text-align: right;
-        }
-        .skn-srz2 .hide-colon .colon {
-          display: none !important;
-        }
+      /*Static CSS - common wider box*/
+      .skn-srz2 .common-lngg-skli .singlecolumn {
+        display: none;
+        margin: 0 !important;
+      }
+      .skn-srz2 .common-lngg-skli.infobarsec .infobarpara,
+      .skn-srz2 .common-lngg-skli.infotilesec .infotilepara {
+        display: block;
+      }
+      .skn-srz2 .common-lngg-skli .rating-heading {
+        flex: 1;
+      }
+      .skn-srz2 .common-lngg-skli .rating-level {
+        width: 15%;
+        text-align: right;
+      }
+      .skn-srz2 .common-lngg-skli .rating-level:empty,
+      .skn-srz2
+        .common-lngg-skli.infocirclesec
+        .infocirclepara
+        .rating-level:empty {
+        display: none;
+      }
+      .skn-srz2 .common-lngg-skli .sliced-rect .sliced-rect-tile {
+        height: 100%;
+        background-color: #d5d6d6;
+        float: left;
+        margin-right: 3px;
+      }
+      .skn-srz2 .common-lngg-skli .sliced-rect .sliced-rect-tile:last-child {
+        margin-right: 0;
+      }
+      .skn-srz2 .common-lngg-skli .nativeLangPara.paragraph {
+        width: 100% !important;
+        max-width: 100%;
+      }
+      .skn-srz2 .common-lngg-skli.infobarsec .field .colon,
+      .skn-srz2 .common-lngg-skli.infotilesec .field .colon {
+        display: none;
+      }
+      .skn-srz2 .common-lngg-skli.infobarsec .field:first-child .colon,
+      .skn-srz2 .common-lngg-skli.infotilesec .field:first-child .colon,
+      .skn-srz2 .common-lngg-skli .field *,
+      .skn-srz2 .common-lngg-skli .nativeLangPara .field {
+        display: inline;
+      }
+      .skn-srz2 .common-lngg-skli .sliced-rect,
+      .skn-srz2 .common-lngg-skli .inner-rating {
+        height: 7px;
+      }
+      .skn-srz2 .common-lngg-skli .fielditem-ratt,
+      .skn-srz2 .common-lngg-skli .lang-scale {
+        text-align: right;
+      }
+      .skn-srz2 .hide-colon .colon {
+        display: none !important;
+      }
 
-        /*Static CSS - only Bar wider box*/
-        .skn-srz2
-          .common-lngg-skli.hide-bar
-          .rating-bar,
-        .skn-srz2
-          .common-lngg-skli.hide-bar
-          .sliced-rect,
-        .skn-srz2
-          .common-lngg-skli.hide-only-bar
-          .rating-bar,
-        .skn-srz2
-          .common-lngg-skli.hide-only-bar.infotilesec
-          .sliced-rect,
-        .skn-srz2
-          .common-lngg-skli.hide-bar
-          .circle-parent,
-        .skn-srz2
-          .common-lngg-skli.hide-only-bar
-          .circle-parent {
-          display: none !important;
-        }
-        .skn-srz2 .common-lngg-skli .rating-bar {
-          background: #d5d6d6;
-          page-break-inside: avoid;
-        }
-        .skn-srz2 .common-lngg-skli .inner-rating,
-        .skn-srz2
-          .common-lngg-skli
-          .sliced-rect
-          .sliced-rect-tile.ratvfill {
-          background: #002e58;
-        }
-        .skn-srz2
-          .common-lngg-skli.hide-bar
-          .nativeLangPara
-          .fielditem-ratt {
-          display: inline !important;
-        }
-        .skn-srz2
-          .common-lngg-skli.hide-bar
-          .fielditem-ratt,
-        .skn-srz2 .common-lngg-skli.hide-bar .brkt {
-          display: none !important;
-        }
+      /*Static CSS - only Bar wider box*/
+      .skn-srz2 .common-lngg-skli.hide-bar .rating-bar,
+      .skn-srz2 .common-lngg-skli.hide-bar .sliced-rect,
+      .skn-srz2 .common-lngg-skli.hide-only-bar .rating-bar,
+      .skn-srz2 .common-lngg-skli.hide-only-bar.infotilesec .sliced-rect,
+      .skn-srz2 .common-lngg-skli.hide-bar .circle-parent,
+      .skn-srz2 .common-lngg-skli.hide-only-bar .circle-parent {
+        display: none !important;
+      }
+      .skn-srz2 .common-lngg-skli .rating-bar {
+        background: #d5d6d6;
+        page-break-inside: avoid;
+      }
+      .skn-srz2 .common-lngg-skli .inner-rating,
+      .skn-srz2 .common-lngg-skli .sliced-rect .sliced-rect-tile.ratvfill {
+        background: #002e58;
+      }
+      .skn-srz2 .common-lngg-skli.hide-bar .nativeLangPara .fielditem-ratt {
+        display: inline !important;
+      }
+      .skn-srz2 .common-lngg-skli.hide-bar .fielditem-ratt,
+      .skn-srz2 .common-lngg-skli.hide-bar .brkt {
+        display: none !important;
+      }
 
-        .skn-srz2 .circle {
-          height: 8px;
-          width: 8px;
-          margin-right: 2px;
-        }
+      .skn-srz2 .circle {
+        height: 8px;
+        width: 8px;
+        margin-right: 2px;
+      }
 
-        .skn-srz2 .circle-parent {
-          display: flex;
-          flex-direction: row;
-          justify-content: end;
-        }
-        .skn-srz2
-          .skli-sec.infocirclesec
-          .infocirclepara
-          .field
-          *,
-        .skn-srz2
-          .lang-sec.infocirclesec
-          .infocirclepara
-          .field
-          * {
-          display: inline;
-        }
-        .skn-srz2
-          .skli-sec.infocirclesec
-          .infocirclepara,
-        .skn-srz2
-          .lang-sec.infocirclesec
-          .infocirclepara {
-          display: block;
-        }
+      .skn-srz2 .circle-parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+      }
+      .skn-srz2 .skli-sec.infocirclesec .infocirclepara .field *,
+      .skn-srz2 .lang-sec.infocirclesec .infocirclepara .field * {
+        display: inline;
+      }
+      .skn-srz2 .skli-sec.infocirclesec .infocirclepara,
+      .skn-srz2 .lang-sec.infocirclesec .infocirclepara {
+        display: block;
+      }
 
-        .skn-srz2 .infocirclepara,
-        .skn-srz2 .infobarpara,
-        .skn-srz2 .infotilepara {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          word-break: break-word;
-          align-items: flex-end;
-        }
-        .skn-srz2 .common-lngg-skli .lang-space {
-          display: inline;
-        }
-        .skn-srz2 .common-lngg-skli .ratingWrapper {
-          padding-top: 3px;
-        }
-        .skn-srz2 .lang-space .colon {
-          display: none !important;
-        }
-        .skn-srz2 .nativeLangPara .lang-space .colon {
-          display: inline !important;
-        }
-        .skn-srz2 .nativeLangPara .ratingWrapper {
-          display: inline;
-          float: none;
-        }
-        .skn-srz2
-          .nativeLangPara
-          .rating-heading
-          span,
-        .skn-srz2 .nativeLangPara .lang-space .colon {
-          font-weight: bold;
-        }
-        /* GRYR */
-        .skn-srz2 .displayNoneThisField {
-          display: none;
-        } /* Keep this class always at bottom */
+      .skn-srz2 .infocirclepara,
+      .skn-srz2 .infobarpara,
+      .skn-srz2 .infotilepara {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        word-break: break-word;
+        align-items: flex-end;
+      }
+      .skn-srz2 .common-lngg-skli .lang-space {
+        display: inline;
+      }
+      .skn-srz2 .common-lngg-skli .ratingWrapper {
+        padding-top: 3px;
+      }
+      .skn-srz2 .lang-space .colon {
+        display: none !important;
+      }
+      .skn-srz2 .nativeLangPara .lang-space .colon {
+        display: inline !important;
+      }
+      .skn-srz2 .nativeLangPara .ratingWrapper {
+        display: inline;
+        float: none;
+      }
+      .skn-srz2 .nativeLangPara .rating-heading span,
+      .skn-srz2 .nativeLangPara .lang-space .colon {
+        font-weight: bold;
+      }
+      /* GRYR */
+      .skn-srz2 .displayNoneThisField {
+        display: none;
+      } /* Keep this class always at bottom */
 
-        /*Builder css*/
-        .skn-srz2 .common-lngg-skli .sortable-item {
-          width: 100%;
-        }
-        .skn-srz2
-          .common-lngg-skli
-          .sortableInner
-          .sortable-item
-          .nativeLangPara
-          .rating-heading {
-          font-weight: bold;
-        }
+      /*Builder css*/
+      .skn-srz2 .common-lngg-skli .sortable-item {
+        width: 100%;
+      }
+      .skn-srz2
+        .common-lngg-skli
+        .sortableInner
+        .sortable-item
+        .nativeLangPara
+        .rating-heading {
+        font-weight: bold;
+      }
 
-        /*PDF Issue Fixes*/
-        .skn-srz2.for-pdf .circle-parent {
-          display: block;
-          height: 10px;
-        }
-        .skn-srz2.for-pdf .circle {
-          display: inline-block;
-        }
+      /*PDF Issue Fixes*/
+      .skn-srz2.for-pdf .circle-parent {
+        display: block;
+        height: 10px;
+      }
+      .skn-srz2.for-pdf .circle {
+        display: inline-block;
+      }
 
-        /*PICT support*/
-        .skn-srz2.pict-pcpf-none .photo,
-        .skn-srz2 .sortable-item .socl-icons,
-        .resume-preview
-          .skn-srz2
-          .sortable-item
-          .socl-icons {
-          display: none;
-        }
-        .skn-srz2 .docdata-icon .svg-inricon {
-          fill: #fff;
-        }
-        .skn-srz2 .docdata-icon svg {
-          border-radius: 50%;
-        }
-        .skn-srz2 .iconRow a {
-          color: #000;
-        }
-        .skn-srz2 .svg-inriconobj,
-        .skn-srz2 .svg-inriconobj path,
-        .skn-srz2 .svg-fillcirclebg,
-        .skn-srz2 .svg-fillsqrbg,
-        .skn-srz2 .svg-circlebdr,
-        .skn-srz2 .svg-sqrbdr,
-        .skn-srz2 .svg-circlebg {
-          fill: transparent !important;
-        }
-        .skn-srz2 .svg-circlebdr {
-          display: none;
-        }</style
-      ><style
-        type="text/css"
-        id="dynamic"
-        data-time="Wed Aug 14 2024 16:40:35 GMT+0300 (East Africa Time)"
-      >
-        .skn-srz2,
-        .skn-srz2 table {
-          line-height: 18px;
-        }
-        .skn-srz2 {
-          border-left-color: #002e58 !important;
-        }
-        .skn-srz2.pagesize {
-          width: 684px;
-        }
-        .skn-srz2.fontsize {
-          font-size: 13px;
-        }
-        .skn-srz2.fontface {
-          font-family: Century Gothic;
-        }
-        .skn-srz2 .name {
-          color: #002e58;
-          font-size: 41px;
-          line-height: 52px;
-        }
-        .skn-srz2 .address {
-          font-size: 12px;
-          line-height: 24px;
-          padding-top: 17px;
-        }
-        .skn-srz2 .section {
-          padding-top: 17px;
-        }
-        .skn-srz2 .firstsection,
-        .skn-srz2 .nameSec,
-        .skn-srz2 .SECTION_CNTC {
-          padding-top: 0;
-        }
-        .skn-srz2 .section.photo {
-          padding-top: 10px;
-        }
-        .skn-srz2 .heading {
-          padding-bottom: 11px;
-        }
-        .skn-srz2 .jobtitle,
-        span.degree,
-        span.programline {
-          font-size: 16px;
-        }
-        .skn-srz2 .paragraph {
-          padding-top: 6px;
-        }
-        .skn-srz2 .firstparagraph {
-          padding-top: 0 !important;
-        }
-        .skn-srz2 .singlecolumn,
-        .skn-srz2 .maincolumn {
-          margin-left: 0px;
-        }
-        .skn-srz2 span.dates_wrapper {
-          line-height: 19px;
-        }
-        .skn-srz2 .sectiontitle,
-        .skn-srz2 .resumeTitle {
-          color: #002e58;
-          font-size: 19px;
-          line-height: 24px;
-        }
-        .skn-srz2 table.skills td {
-          padding-top: 2px;
-        }
-        .skn-srz2 .noPind {
-          margin-left: 0;
-        }
-        .skn-srz2 .multi-hilt .singlecolumn {
-          width: calc(100% - 0px);
-        }
-        /*Timeline*/
-        .skn-srz2
-          .notdraggable
-          + .section:not(.notdraggable):before {
-          height: 28px;
-        }
-        .skn-srz2 .singlecolumn:before,
-        .skn-srz2
-          .common-lngg-skli
-          .firstparagraph
-          .singlecolumn:before {
-          background: #002e58;
-          top: 5px;
-          margin-left: -0px;
-        }
+      /*PICT support*/
+      .skn-srz2.pict-pcpf-none .photo,
+      .skn-srz2 .sortable-item .socl-icons,
+      .resume-preview .skn-srz2 .sortable-item .socl-icons {
+        display: none;
+      }
+      .skn-srz2 .docdata-icon .svg-inricon {
+        fill: #fff;
+      }
+      .skn-srz2 .docdata-icon svg {
+        border-radius: 50%;
+      }
+      .skn-srz2 .iconRow a {
+        color: #000;
+      }
+      .skn-srz2 .svg-inriconobj,
+      .skn-srz2 .svg-inriconobj path,
+      .skn-srz2 .svg-fillcirclebg,
+      .skn-srz2 .svg-fillsqrbg,
+      .skn-srz2 .svg-circlebdr,
+      .skn-srz2 .svg-sqrbdr,
+      .skn-srz2 .svg-circlebg {
+        fill: transparent !important;
+      }
+      .skn-srz2 .svg-circlebdr {
+        display: none;
+      }
+    </style>
+    <style
+      type="text/css"
+      id="dynamic"
+      data-time="Wed Aug 14 2024 16:40:35 GMT+0300 (East Africa Time)"
+    >
+      .skn-srz2,
+      .skn-srz2 table {
+        line-height: 18px;
+      }
+      .skn-srz2 {
+        border-left-color: #002e58 !important;
+        border-left: 135px;
+      }
+      .skn-srz2.pagesize {
+        width: 612px;
+      }
+      .skn-srz2.fontsize {
+        font-size: 15px;
+      }
+      .skn-srz2.fontface {
+        font-family: Century Gothic;
+      }
+      .skn-srz2 .name {
+        color: #002e58;
+        font-size: 41px;
+        line-height: 52px;
+      }
+      .skn-srz2 .address {
+        font-size: 12px;
+        line-height: 24px;
+        padding-top: 17px;
+      }
+      .skn-srz2 .section {
+        padding-top: 17px;
+      }
+      .skn-srz2 .firstsection,
+      .skn-srz2 .nameSec,
+      .skn-srz2 .SECTION_CNTC {
+        padding-top: 0;
+      }
+      .skn-srz2 .section.photo {
+        padding-top: 10px;
+      }
+      .skn-srz2 .heading {
+        padding-bottom: 11px;
+      }
+      .skn-srz2 .jobtitle,
+      span.degree,
+      span.programline {
+        font-size: 16px;
+      }
+      .skn-srz2 .paragraph {
+        padding-top: 6px;
+      }
+      .skn-srz2 .firstparagraph {
+        padding-top: 0 !important;
+      }
+      .skn-srz2 .singlecolumn,
+      .skn-srz2 .maincolumn {
+        margin-left: 0px;
+      }
+      .skn-srz2 span.dates_wrapper {
+        line-height: 19px;
+      }
+      .skn-srz2 .sectiontitle,
+      .skn-srz2 .resumeTitle {
+        color: #002e58;
+        font-size: 19px;
+        line-height: 24px;
+      }
+      .skn-srz2 table.skills td {
+        padding-top: 2px;
+      }
+      .skn-srz2 .noPind {
+        margin-left: 0;
+      }
+      .skn-srz2 .multi-hilt .singlecolumn {
+        width: calc(100% - 0px);
+      }
+      /*Timeline*/
+      .skn-srz2 .notdraggable + .section:not(.notdraggable):before {
+        height: 28px;
+      }
+      .skn-srz2 .singlecolumn:before,
+      .skn-srz2 .common-lngg-skli .firstparagraph .singlecolumn:before {
+        background: #002e58;
+        top: 5px;
+        margin-left: -0px;
+      }
 
-        /*Icons and Rating*/
-        .skn-srz2 .headingIcon svg circle,
-        .skn-srz2 .sec-icon.headingIcon svg .path-1 {
-          fill: #002e58;
-        }
-        .skn-srz2 .headingIcon {
-          top: -6px;
-        }
-        .skn-srz2 .iconRow svg circle {
-          fill: #002e58;
-        }
-        .skn-srz2 .iconRow .iconSvg {
-          padding-top: -4px;
-        }
+      /*Icons and Rating*/
+      .skn-srz2 .headingIcon svg circle,
+      .skn-srz2 .sec-icon.headingIcon svg .path-1 {
+        fill: #002e58;
+      }
+      .skn-srz2 .headingIcon {
+        top: -6px;
+      }
+      .skn-srz2 .iconRow svg circle {
+        fill: #002e58;
+      }
+      .skn-srz2 .iconRow .iconSvg {
+        padding-top: -4px;
+      }
 
-        /* fixes for builder page */
-        .skn-srz2 .sortable-item .section {
-          padding-top: 0;
-          padding-bottom: 17px;
-        }
-        .skn-srz2 .sortable-item .nameSec {
-          padding-bottom: 0;
-        }
+      /* fixes for builder page */
+      .skn-srz2 .sortable-item .section {
+        padding-top: 0;
+        padding-bottom: 17px;
+      }
+      .skn-srz2 .sortable-item .nameSec {
+        padding-bottom: 0;
+      }
 
-        /*Phase 2: fixes for builder page*/
-        .parent-drag.active.skn-srz2,
-        ._single-parent-drag.active.skn-srz2 {
-          border: 0 !important;
-        }
-        .skn-srz2 .ratingWrapper svg .default-fill {
-          fill: #002e58;
-        }
-        .skn-srz2
-          .SortanleInner
-          .singlecolumn
-          .ratingfield {
-          word-break: break-word;
-        }
+      /*Phase 2: fixes for builder page*/
+      .parent-drag.active.skn-srz2,
+      ._single-parent-drag.active.skn-srz2 {
+        border: 0 !important;
+      }
+      .skn-srz2 .ratingWrapper svg .default-fill {
+        fill: #002e58;
+      }
+      .skn-srz2 .SortanleInner .singlecolumn .ratingfield {
+        word-break: break-word;
+      }
 
-        /*Hover border style*/
-        .skn-srz2.active,
-        .skn-srz2.active._single-parent-drag {
-          padding-left: 1px !important;
-          padding-right: 0 !important;
-        }
-        .skn-srz2.active .section {
-          margin-left: 12px;
-          padding-top: 0;
-        }
+      /*Hover border style*/
+      .skn-srz2.active,
+      .skn-srz2.active._single-parent-drag {
+        padding-left: 1px !important;
+        padding-right: 0 !important;
+      }
+      .skn-srz2.active .section {
+        margin-left: 12px;
+        padding-top: 0;
+      }
 
-        .skn-srz2 .beforecolonspace {
-          display: none !important;
-        }
-        .skn-srz2.show-colon-space .beforecolonspace {
-          display: inline !important;
-        }
+      .skn-srz2 .beforecolonspace {
+        display: none !important;
+      }
+      .skn-srz2.show-colon-space .beforecolonspace {
+        display: inline !important;
+      }
 
-        .skn-srz2 .common-lngg-skli {
-          padding-left: 28px;
-        }
-        .skn-srz2 .common-lngg-skli .heading {
-          margin-left: -0px;
-        }
-        .skn-srz2 .common-lngg-skli .inner-rating,
-        .skn-srz2
-          .common-lngg-skli
-          .sliced-rect
-          .sliced-rect-tile.ratvfill {
-          background: #002e58;
-        }
+      .skn-srz2 .common-lngg-skli {
+        padding-left: 28px;
+      }
+      .skn-srz2 .common-lngg-skli .heading {
+        margin-left: -0px;
+      }
+      .skn-srz2 .common-lngg-skli .inner-rating,
+      .skn-srz2 .common-lngg-skli .sliced-rect .sliced-rect-tile.ratvfill {
+        background: #002e58;
+      }
 
-        /*Circle Pattern*/
-        .skn-srz2 .circle {
-          border-radius: 100%;
-          display: block;
-          height: 11px;
-          width: 11px;
-          box-sizing: border-box;
-          background-color: #d5d6d6;
-        }
-        /*Color Change*/
-        .skn-srz2 .circle-parent .ratvfill,
-        .skn-srz2 .docdata-icon svg {
-          background: #002e58;
-        }
+      /*Circle Pattern*/
+      .skn-srz2 .circle {
+        border-radius: 100%;
+        display: block;
+        height: 11px;
+        width: 11px;
+        box-sizing: border-box;
+        background-color: #d5d6d6;
+      }
+      /*Color Change*/
+      .skn-srz2 .circle-parent .ratvfill,
+      .skn-srz2 .docdata-icon svg {
+        background: #002e58;
+      }
 
-        /*Builder css*/
-        .skn-srz2
-          .sortable-item
-          .common-lngg-skli
-          .singlecolumn:before {
-          left: -32px;
-        }
-      </style>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+      /*Builder css*/
+      .skn-srz2 .sortable-item .common-lngg-skli .singlecolumn:before {
+        left: -32px;
+      }
+    </style>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
     <link
@@ -2207,11 +2102,8 @@
     </style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="format-detection" content="telephone=no" />
-    
-    <title>RESUME_JOSEPH_KARIUKI</title>
-    
 
-    
+    <title>RESUME_JOSEPH_KARIUKI</title>
 
     <link href="./src/google-fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/main-1.0.0.1084.css" id="mainCssId" />
@@ -2221,8 +2113,7 @@
       id="idFavicon"
       href="https://assets.zety.com/build-resume/images/rwzv2/zty/favicon.png"
     />
-    
-    
+
     <style>
       @font-face {
         font-display: swap;
@@ -2261,9 +2152,6 @@
       }
     </style>
 
-    
-    
-    
     <link href="./src/all.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./src/css" media="all" />
     <style type="text/css">
@@ -2502,8 +2390,7 @@
       }
     </style>
     <link rel="stylesheet" href="./src/cookie-consent.css" />
-    
-    
+
     <style id="googleidentityservice_button_styles">
       .qJTHM {
         -webkit-user-select: none;
@@ -2899,8 +2786,7 @@
       sentinel {
       }
     </style>
-    
-    
+
     <style type="text/css">
       @-webkit-keyframes rotate {
         from {
@@ -3325,7 +3211,6 @@
             </div>
           </nav>
           <!--Direct flow-->
-        
         </div>
         <div id="app" role="main" class="main-app">
           <section class="page-wrapper">
@@ -3340,22 +3225,19 @@
                 class="container experiment-finalize-page experiment-finalize-page-v2"
               >
                 <div class="row">
-                  <div class="col-7 finalize-cv-wrapper">
+                  <div class="finalize-cv-wrapper">
                     <div class="row">
                       <div class="col-12">
-                        <div class="d-flex body-resume">
+                        <div class="body-resume">
                           <div
                             class="preview-container js-document-wrap position-relative"
                             id="resumeDoc"
                           >
                             <div class="" tabindex="">
-                              <div>
-                                
-                              </div>
                               <div
                                 data-photo-skin="photo-skin"
                                 class="document doc-root fontsize fontface vmargins hmargins pagesize skn-srz2 SRZ2 ZTY pict-pcpf-purl"
-                                data-color=""
+                                style="margin-left: 30px"
                               >
                                 <div id="CONTAINER_PARENT_0" class="topsection">
                                   <div id="CONTAINER_0" class="left-box">
@@ -3531,8 +3413,19 @@
                                                           </svg>
                                                         </div>
                                                         <div class="icoTxt">
+                                                          <a href="mailto:kariuki.joseph121@gmail.com" class="my-links">
                                                           <span id="FIELD_EMAI"
                                                             >kariuki.joseph121@gmail.com</span
+                                                          ></a>
+                                                        </div>
+                                                        <div class="icoTxt">
+                                                          <span
+                                                          id="FIELD_GITHUB"
+                                                          >
+                                                          <a href="https://github.com/kariuki-joseph" class="my-links">
+                                                            https://github.com/kariuki-joseph
+                                                            </a>
+                                                            </span
                                                           >
                                                         </div>
                                                       </div>
@@ -3756,85 +3649,7 @@
                                         id="SECTION_ALNKac389e45-f23b-d647-c204-d706c902e67c"
                                         class="section SECTION_ALNK has-title"
                                         data-section-cd="ALNK"
-                                      >
-                                        <div class="doc-item">
-                                          <div class="heading">
-                                            <div class="headingIcon">
-                                              <svg viewBox="0 0 54 54">
-                                                <circle
-                                                  cx="27"
-                                                  cy="27"
-                                                  r="26"
-                                                ></circle>
-                                                <path
-                                                  d="M20.3,39.5c-1.5,0-3-0.6-4.1-1.7c-2.3-2.3-2.3-5.9,0-8.2l3.6-3.6c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L17.6,31 c-1.5,1.5-1.5,3.9,0,5.4c1.5,1.5,3.9,1.5,5.4,0l5.3-5.3c1.5-1.5,1.5-3.9,0-5.4c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0 c2.3,2.3,2.3,5.9,0,8.2l-5.3,5.3C23.2,38.9,21.8,39.5,20.3,39.5z"
-                                                ></path>
-                                                <path
-                                                  d="M25.1,29.9c-0.3,0-0.5-0.1-0.7-0.3c-2.3-2.3-2.3-5.9,0-8.2l5.3-5.3c2.3-2.3,5.9-2.3,8.2,0c2.3,2.3,2.3,5.9,0,8.2L34.2,28c-0.4,0.4-1,0.4-1.4,0s-0.4-1,0-1.4l3.6-3.6c1.5-1.5,1.5-3.9,0-5.4c-1.5-1.5-3.9-1.5-5.4,0l-5.3,5.3 c-1.5,1.5-1.5,3.9,0,5.4c0.4,0.4,0.4,1,0,1.4C25.6,29.8,25.3,29.9,25.1,29.9z"
-                                                ></path>
-                                              </svg>
-                                            </div>
-                                            <div
-                                              class="sectiontitle"
-                                              id="SECTIONNAME_ALNK"
-                                            >
-                                             Links and Profiles<span
-                                                title="Rename Websites, Portfolios, Profiles section"
-                                                class="rename-section text-rename"
-                                                >Rename</span
-                                              >
-                                            </div>
-                                          </div>
-                                          <div class="">
-                                            <div class="">
-                                              <div
-                                                id="PARAGRAPH_ALNK_9697f93e-6186-4731-ba55-5b75201c706a"
-                                                class="paragraph PARAGRAPH_ALNK firstparagraph"
-                                              >
-                                                <div class="clearfix doc-item">
-                                                  <div class="singlecolumn">
-                                                    <ul>
-                                                      <li dependency="LNK1">
-                                                        <span id="FIELD_LNK1"
-                                                          >https://github.com/kariuki-joseph</span
-                                                        >
-                                                      </li>
-                                                      <li dependency="LNK2">
-                                                        <span id="FIELD_LNK2"
-                                                          >https://kariukijoseph.netlify.app</span
-                                                        >
-                                                      </li>
-                                                      <li dependency="LNK3">
-                                                        <span id="FIELD_LNK3"
-                                                          >https://linkedin.com/in/kariukijoseph</span
-                                                        >
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                                <div
-                                                  class="doc-overlay para-overlay"
-                                                  style="
-                                                    left: -2px;
-                                                    right: -2px;
-                                                  "
-                                                >
-                                                  <span
-                                                    class="badge badge-primary badge-edit"
-                                                  ></span
-                                                  ><span>&nbsp;</span>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="doc-overlay section-overlay"
-                                          style="left: -2px; right: -2px"
-                                        >
-                                          <span>&nbsp;</span>
-                                        </div>
-                                      </div>
+                                      ></div>
                                     </div>
                                     <div
                                       data-react-beautiful-dnd-draggable="1"
@@ -4272,55 +4087,6 @@
                                                     <i class="icon-move"></i>
                                                   </button>
                                                 </div>
-                                                <div
-                                                  id="PARAGRAPH_SKLI_d35c3201-daa5-b03c-85c1-d95235ab63b8"
-                                                  class="paragraph PARAGRAPH_SKLI para_odd"
-                                                >
-                                                  <div
-                                                    class="clearfix doc-item"
-                                                  >
-                                                    <div
-                                                      class="singlecolumn infotilepara"
-                                                    >
-                                                      <div
-                                                        class="field lang-space"
-                                                      >
-                                                        <span
-                                                          class="rating-heading"
-                                                          ><span id="FIELD_SKC1"
-                                                            ><p>
-                                                              Version Control:
-                                                              Git and GitHub
-                                                            </p></span
-                                                          ></span
-                                                        >
-                                                      </div>
-                                                      <div
-                                                        class="ratingWrapper"
-                                                      >
-                                                        <div
-                                                          class="field lang-scale"
-                                                        >
-                                                          <span
-                                                            id="FIELD_RATT"
-                                                          ></span>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div
-                                                    class="doc-overlay para-overlay"
-                                                    style="
-                                                      left: -2px;
-                                                      right: -2px;
-                                                    "
-                                                  >
-                                                    <span
-                                                      class="badge badge-primary badge-edit"
-                                                    ></span
-                                                    ><span>&nbsp;</span>
-                                                  </div>
-                                                </div>
                                               </div>
                                               <div
                                                 class="sortable-item paragraph-container"
@@ -4371,8 +4137,7 @@
                                                           class="rating-heading"
                                                           ><span id="FIELD_SKC1"
                                                             ><p>
-                                                              DevOps: Docker,
-                                                              Kubernetes, GitHub
+                                                              DevOps: Docker, Kubernetes, GitHub
                                                               Actions
                                                             </p></span
                                                           ></span
@@ -4615,7 +4380,7 @@
                                                         class="jobdates"
                                                         id="FIELD_JSTD"
                                                         format="%Y-%m"
-                                                        >2023-06</span
+                                                        >Jun 2023</span
                                                       ><span
                                                         dependency="JSTD+EDDT"
                                                       >
@@ -4624,7 +4389,7 @@
                                                         class="jobdates"
                                                         id="FIELD_EDDT"
                                                         format="%Y-%m"
-                                                        >2023-09</span
+                                                        >Sep 2023</span
                                                       >
                                                     </span>
                                                     <div class="singlecolumn">
@@ -4781,7 +4546,7 @@
                                                         class="jobdates"
                                                         id="FIELD_JSTD"
                                                         format="%Y-%m"
-                                                        >2021-04</span
+                                                        >Apr 2021</span
                                                       ><span
                                                         dependency="JSTD+EDDT"
                                                       >
@@ -4790,7 +4555,7 @@
                                                         class="jobdates"
                                                         id="FIELD_EDDT"
                                                         format="%Y-%m"
-                                                        >2023-02</span
+                                                        >Feb 2023</span
                                                       >
                                                     </span>
                                                     <div class="singlecolumn">
@@ -5011,24 +4776,12 @@
                                                   >
                                                     <span class="dates_wrapper">
                                                       <span
-                                                        class="xslt_static_change"
-                                                        >Expected in </span
-                                                      ><span
                                                         class="jobdates"
                                                         id="FIELD_GRYR"
                                                         format="%Y-%m"
                                                         dependency="GRYR"
-                                                        >2024-12</span
-                                                      ><span
-                                                        class="jobdates"
-                                                        id="FIELD_GRST"
-                                                        format="%Y-%m"
-                                                        >2020-09</span
-                                                      ><span
-                                                        class="jobdates"
-                                                        id="FIELD_GRED"
-                                                        format="%Y-%m"
-                                                        >undefined</span
+                                                        >Sep 2020 - Apr
+                                                        2024</span
                                                       >
                                                     </span>
                                                     <div class="singlecolumn">
@@ -5140,27 +4893,18 @@
                                                     <span class="dates_wrapper">
                                                       <span
                                                         class="xslt_static_change displayNoneThisField"
-                                                        >Expected in </span
+                                                        >Exp </span
                                                       ><span
                                                         class="jobdates"
                                                         id="FIELD_GRYR"
                                                         format="%Y-%m"
                                                         dependency="GRYR"
-                                                        >2020-08</span
+                                                        >Jan 2020 -</span
                                                       ><span
                                                         class="jobdates"
                                                         id="FIELD_GRST"
                                                         format="%Y-%m"
-                                                        >2020-01</span
-                                                      ><span
-                                                        dependency="GRST+GRED"
-                                                      >
-                                                        - </span
-                                                      ><span
-                                                        class="jobdates"
-                                                        id="FIELD_GRED"
-                                                        format="%Y-%m"
-                                                        >2020-08</span
+                                                        >Aug 2020</span
                                                       >
                                                     </span>
                                                     <div class="singlecolumn">
@@ -5323,8 +5067,8 @@
                                                         backend API for HabaPay
                                                         that served both web and
                                                         mobile platforms:
-                                                        <em
-                                                          >https://github.com/glitex-interns-june-2023/habapay-api</em
+                                                        <a href="https://github.com/glitex-interns-june-2023/habapay-api" class="my-links"
+                                                          >https://github.com/glitex-interns-june-2023/habapay-api</a
                                                         >
                                                       </li>
                                                       <li>
@@ -5333,8 +5077,8 @@
                                                         develop Kwako - A
                                                         House-hunting Mobile
                                                         App:
-                                                        <em
-                                                          >https://github.com/kariuki-joseph/kwako</em
+                                                        <a href="https://github.com/kariuki-joseph/kwako" class="my-links"
+                                                          >https://github.com/kariuki-joseph/kwako</a
                                                         >
                                                       </li>
                                                       <li>
@@ -5418,6 +5162,9 @@
               id="dynamicOuter"
               data-time="Wed Aug 14 2024 16:40:35 GMT+0300 (East Africa Time)"
             >
+            *{
+              cursor: default;
+            }
               .svg-skin .document.skn-srz1 .left-box{background:}.svg-skin .document.skn-srz1 .left-box .heading:before{background:}.svg-skin .document.skn-srz1 .left-box .outer-square:before{background:}.svg-skin .document.skn-srz1 .right-box .sectiontitle{color:}.svg-skin .document.skn-srz1 .right-box .inner-square{background:}.svg-skin .document.skn-srz1 .left-box .sortable-item.active .inner-square{background:}.svg-skin .document.skn-srz1._single-parent-drag .inner-square{background:}.svg-skin .document.skn-srz1 .left-box:before{background:}.svg-skin .document.skn-srz2{border-left-color:!important}.svg-skin .document.skn-srz2 .name{color:}.svg-skin .document.skn-srz2 .resumeTitle,.svg-skin .document.skn-srz2 .sectiontitle{color:}.svg-skin .document.skn-srz2 .singlecolumn:before{background:}.svg-skin .document.skn-srz2 .headingIcon svg circle{fill:}.svg-skin .document.skn-srz2 .iconRow svg circle{fill:}.svg-skin .document.skn-srz2 .ratingWrapper svg .default-fill{fill:}.svg-skin .document.skn-srz3 .name{color:}.svg-skin .document.skn-srz3 .resumeTitle,.svg-skin .document.skn-srz3 .sectiontitle{color:}.svg-skin .document.skn-srz3 .ratingWrapper svg{stroke:}.svg-skin .document.skn-srz3 .headingIcon svg circle,.svg-skin .document.skn-srz3 .ratingWrapper svg .default-fill{fill:}.svg-skin .document.skn-srz4 .topsection{background-color:}.svg-skin .document.skn-srz4 .sectiontitle{color:}.svg-skin .document.skn-srz4 .ratingWrapper .default-fill{fill:}.svg-skin .document.skn-srz5 .heading{color:}.svg-skin .document.skn-srz5 .SECTION_CNTC:before,.svg-skin .document.skn-srz5 .nameSec:before{background:}.svg-skin .document.skn-srz5 .singlecolumn:before{background:}.svg-skin .document.skn-srz5 .headingIcon svg rect{fill:}.svg-skin .document.skn-srz5 .ratingRect .default-fill{fill:}.svg-skin .document.skn-srz5 .headingIcon:before{background:}.svg-skin .document.skn-srz5 .topsection{background: }.svg-skin #documeznt.skn-srz6 .right-box .heading:before{background:}.svg-skin .document.skn-srz6 .right-box{background:}.svg-skin .document.skn-srz6 .right-box .outer-square:before{background:}.svg-skin .document.skn-srz6 .left-box .inner-square{background:}.svg-skin .document.skn-srz6 .left-box .sectiontitle{color:}.svg-skin .document.skn-srz6 .right-box .heading:before,.svg-skin .document.skn-srz6 .right-box .sortable-item.active .inner-square{background:}.svg-skin .document.skn-srz6._single-parent-drag .inner-square{background:}.svg-skin .document.skn-srz6 .right-box:before{background:}.svg-skin .document.skn-srz7 .name,.svg-skin .document.skn-srz7 .resumeTitle,.svg-skin .document.skn-srz7 .sectiontitle{color:}.svg-skin .document.skn-srz7 .headingIcon svg rect,.svg-skin .document.skn-srz7 .iconRow svg rect{fill:}.svg-skin .document.skn-srz7 .ratingWrapper .default-fill{fill:}.svg-skin .document.skn-srz8 .heading{color:}.svg-skin .document.skn-srz8 .SECTION_CNTC:before,.svg-skin .document.skn-srz8 .inner-square,.svg-skin .document.skn-srz8 .right-box,.svg-skin .document.skn-srz8 .topsection, .svg-skin .document.skn-srz8 .left-box,.svg-skin .document.skn-srz8 .nameSec:before{background:}.svg-skin .document.skn-srz8 .topsection{background:}.svg-skin .document.skn-srz9 .name{color:}.svg-skin .document.skn-srz9 .iconRow svg circle,.svg-skin .document.skn-srz9 .monogram svg circle{fill:}.svg-skin .document.skn-srz9 .heading:before,.svg-skin .document.skn-srz9 .resumeTitle,.svg-skin .document.skn-srz9 .sectiontitle{color:}.svg-skin .document.skn-srz9 .crcl,.svg-skin .document.skn-srz9 .heading:before{background:}.svg-skin .document.skn-srz9 .ratingWrapper .default-fill{fill:}.svg-skin .document.skn-trz1 .name,.svg-skin .document.skn-trz1 .resumeTitle,.svg-skin .document.skn-trz1 .sectiontitle{color:}.svg-skin .document.skn-trz1 .inner-square{background:}.svg-skin .document.skn-trz2 .name{color:}.svg-skin .document.skn-trz2 .sectiontitle{color:}.svg-skin .document.skn-trz2 .right-box .section .icon1,.svg-skin .document.skn-trz2 .right-box .section .icon2{fill:}.svg-skin .document.skn-trz2 .topbg{background-color:}.svg-skin .document.skn-trz2 .topbgborder svg polyline{fill:}.svg-skin .document.skn-trz2 .topsection .left-box:before,.svg-skin .document.skn-trz2 .topsection .right-box:before{background-color:}.svg-skin .document.skn-trz2 .topsection .left-box:after,.svg-skin .document.skn-trz2 .topsection .right-box:after{color:}.svg-skin .document.skn-trz2 .resumeTitle{color:}.svg-skin .document.skn-trz2 .rating .default-fill{fill:}.svg-skin .document.skn-trz3 .name{color:}.svg-skin .document.skn-trz3 .sectiontitle{color:}.svg-skin .document.skn-trz3 .right-box .section .icon1,.svg-skin .document.skn-trz3 .right-box .section .icon2{fill:}.svg-skin .document.skn-trz3 .resumeTitle{color:}.svg-skin .document.skn-trz3 .rating .default-fill{fill:}.svg-skin .document.skn-trz4 .name,.svg-skin .document.skn-trz4 .resumeTitle,.svg-skin .document.skn-trz4 .sectiontitle{color:}.svg-skin .document.skn-trz4 .rating .default-fill{fill:}.svg-skin .document.skn-trz5 .resumeTitle,.svg-skin .document.skn-trz5 .sectiontitle{color:}.svg-skin .document.skn-trz5 .name{color:}.svg-skin .document.skn-trz5 .headingIcon svg rect{fill:}.svg-skin .document.skn-trz5 .innerRating{background-color:}.svg-skin .document.skn-trz6 .name{color:}.svg-skin .document.skn-trz6 .monogram svg circle{fill:}.svg-skin .document.skn-trz6 .sectiontitle{color:}.svg-skin .document.skn-trz6 .left-box .heading~.paragraph .date-content:before{background:}.svg-skin .document.skn-trz6 .left-box .singlecolumn:before{background:}.svg-skin .document.skn-trz6 .headingIcon svg circle{fill:}.svg-skin .document.skn-trz6 .ratingWrapper .default-fill{fill:}.svg-skin .document.skn-trz7 .name{color:}.svg-skin .document.skn-trz7 .sectiontitle{color:}.svg-skin .document.skn-trz7 svg{stroke:}.svg-skin .document.skn-trz7 .resumeTitle{color:}.svg-skin .document.skn-trz7 .ratingWrapper svg{stroke:}.svg-skin .document.skn-trz7 .headingIcon svg circle,.svg-skin .document.skn-trz7 .ratingWrapper svg .default-fill{fill:}.svg-skin .document.skn-trz8 .name,.svg-skin .document.skn-trz8 .resumeTitle,.svg-skin .document.skn-trz8 .sectiontitle{color:}.svg-skin .document.skn-trz8 .rating-wrapper .default-fill{fill:}.svg-skin .document.skn-trz9 .name{color:}.svg-skin .document.skn-trz9 .resumeTitle,.svg-skin .document.skn-trz9 .sectiontitle{color:}.svg-skin .document.skn-trz9 .headingIcon svg rect{fill:}.svg-skin .document.skn-trz9 .innerRating{background-color:} .svg-skin .document.skn-cna3 .inner-rating{background-color:}.svg-skin .document.skn-cba3 .inner-rating{background-color:}.svg-skin .document.skn-mlt7 .inner-rating{background-color:}.svg-skin .document.skn-cba3 .inner-rating{background-color:}.svg-skin .document.skn-mta1 .inner-rating{background-color:}.svg-skin .document.skn-ima2 .inner-rating{background-color:}.svg-skin .skn-oxa1 .inner-rating{background-color: !important}.svg-skin .document.skn-mlk8 .inner-rating{background-color:}.svg-skin .document.skn-mlk7 .right-box .lang-sec.infobarsec .inner-rating{background-color:}.svg-skin .document.skn-mlk5 .lang-sec.infobarsec .inner-rating{background-color:}.svg-skin .document.skn-mlm1 .nameSec:before,.svg-skin .document.skn-mlm1 .monogram{background:}.svg-skin .document.skn-mlm1 .pathIn{fill:} .svg-skin .document.skn-mlm3 .topSection{border-color:} .svg-skin .document.skn-mlm3 .topSection:before{background:} .svg-skin .document.skn-mlm3 .sprtr {color:} .svg-skin .document.skn-mlm3 .parentContainer .section{border-color:} .svg-skin .document.skn-mlm3 .section:not(.nameSec):not(.cntcSec):not(.adnlLnks):before{background:} .svg-skin .document.skn-mlm3 .innerRating{background-color:}.svg-skin .document.skn-mlm4 .nameSec .name:before,.svg-skin .document.skn-mlm4 .resumeTitle:before{background:} .svg-skin .document.skn-mlm4 .left-box .section,.svg-skin .document.skn-mlm4 .right-box .section{border-color:} .svg-skin .document.skn-mlm4 .adnlLnks,.svg-skin .document.skn-mlm4 .cntcSec{border-color:} .svg-skin .document.skn-mlm4 .innerRating{background-color:}.svg-skin .document.skn-mld5 .name{color:} .svg-skin .document.skn-mld5 .sectiontitle{color:} .svg-skin .document.skn-mld5:before,.svg-skin .document.skn-mld5 .address:before,.svg-skin .document.skn-mld5 .phone-box{background-color:} .svg-skin .document.skn-mld5 .section:not(.name-sec):not(.cntc-sec):not(.adnl-lnks):before{border-color:};background:} .svg-skin .document.skn-mld5 .inner-rating{background-color:}.svg-skin .document.skn-mld4 .heading{color:} .svg-skin .document.skn-mld4 .top-container .right-box > .section:first-child:before,.svg-skin .document.skn-mld4 .top-container .right-box >.sortable-item:first-child .section:before,.svg-skin .document.skn-mld4 .left-box .inner-rating,.svg-skin .document.skn-mld4 .inner-rating,.svg-skin .document.skn-mld4 .mid-container,.svg-skin .document.skn-mld4 .left-box:before,.svg-skin .document.skn-mld4 .name-in:before{background:} .svg-skin .document.skn-mld4 .sectiontitle {color: } .svg-skin .document.skn-mld4 .inner-rating{background-color:}.svg-skin .document.skn-mld1 .left-box .heading{color:} .svg-skin .document.skn-mld1 .top-section .monogram-in{background-color:} .svg-skin .document.skn-mld1 .top-section .pathIn{fill:} .svg-skin  .document.skn-mlc1 .topsection .left-box:before,.svg-skin .document.skn-mlc1 .parentContainer .left-box:before,.svg-skin .document.skn-mlc1 .topsection .right-box:before{background-color:} .svg-skin .document.skn-mlc1 .adrs-field .circle{color:} .svg-skin .document.skn-mlc1 .lang-sec.infobarsec .inner-rating,.svg-skin .document.skn-mlc1 .skli-sec.infobarsec .inner-rating{background-color:} .svg-skin  .document.skn-mlc1 .innerRating{background-color:} .svg-skin  .document.skn-mlc1 .parentContainer .left-box.dropable-container .SortableItem-sibling[data-react-beautiful-dnd-draggable="0"]{background-color:} .svg-skin .skn-mlm6 .name{color:} .svg-skin .skn-mlm6 .parent-container .right-box,.skn-mlm6 .parent-container .section{border-color:} .svg-skin .skn-mlm6 .inner-rating{background-color:} .svg-skin .document.skn-mlm7 .cntc-sec:before,.svg-skin .document.skn-mlm7 .adnl-lnks:before{background:} .svg-skin .document.skn-mlm7 .name:before,.svg-skin .document.skn-mlm7:before,.svg-skin .document.skn-mlm7:after{border-color:} .svg-skin .document.skn-mlm7 .inner-rating{background-color:} .svg-skin .document.skn-mlf6 .name:before{background-color:}.svg-skin .document.skn-ata1  div.name,.svg-skin .document.skn-ata1  div.sectiontitle{color:} .svg-skin .document.skn-cba1  div.name, .svg-skin .document.skn-cba1  div.sectiontitle{color:;} .svg-skin .document.skn-cba1  div.lowerborder{border-color:;} .svg-skin .document.skn-cba2  div.name, .svg-skin .document.skn-cba2  div.sectiontitle{color:;} .svg-skin .document.skn-cba2  div.lowerborder, .svg-skin .document.skn-cba2  div.lowerborder2, .svg-skin .document.skn-cba2 div.heading:before{border-color:;} .svg-skin .document.skn-cba3  div.name, .svg-skin .document.skn-cba3  div.sectiontitle{color:;} .svg-skin .document.skn-cba3  div.name, .svg-skin .document.skn-cba3  div.lowerborder, .svg-skin .document.skn-cba3  div.lowerborder2, .svg-skin .document.skn-cba3 div.heading:before{border-color:;} .svg-skin .document.skn-cna1  div.name, .svg-skin .document.skn-cna1  div.sectiontitle{color:;} .svg-skin .document.skn-cna1  div.name{border-top-color:;} .svg-skin .document.skn-cna3  div.name, .svg-skin .document.skn-cna3  div.sectiontitle{color:;} .svg-skin .document.skn-cna3  .address:before{border-top-color:;} .svg-skin .document.skn-cna3  div.heading{border-bottom-color: !important;} .svg-skin .document.skn-hra1  .bottomborder{border-bottom-color:;} .svg-skin .document.skn-hra1  div.sectiontitle{border-bottom-color:#FFF;color:;} .svg-skin .document.skn-hra1 div.name{color:;} .svg-skin .document.skn-hra2  div.name, .svg-skin .document.skn-hra2  div.sectiontitle{color:;} .svg-skin .document.skn-hra2  .topborder{border-color: !important;} .svg-skin .document.skn-ima1  div.name, .svg-skin .document.skn-ima1  div.sectiontitle{color:;} .svg-skin .document.skn-ima1 .address, .svg-skin .document.skn-ima1  div.name,  .svg-skin .document.skn-ima1  div.resumeTitle{border-color: !important ;box-shadow:4px 4px 0 0  !important;}  .svg-skin .document.skn-ima1  .bottomborder, .svg-skin .document.skn-ima1  .lowerborder{border-color: !important;} .svg-skin .document.skn-ima2  div.name, .svg-skin .document.skn-ima2  div.sectiontitle{color:;} .svg-skin .document.skn-ima2 div.bottomborder{border-color: !important;} .svg-skin .document.skn-lca1  .lowerborder{border-color:;} .svg-skin .document.skn-mca2  div.name, .svg-skin .document.skn-mca2  div.sectiontitle{color:;} .svg-skin .document.skn-mla7  div.sectiontitle{color:;} .svg-skin .document.skn-mla7  div.firstsection:after, .svg-skin .document.skn-mla7  div.firstsection:before{background:;} .svg-skin .document.skn-mla7 .inner-rating{background-color:} .svg-skin .document.skn-mlt6  div.firstsection{padding-top:0 !important;background-color:;margin-bottom:0 !important;} .svg-skin .document.skn-mlt7  div.sectiontitle{color:;} .svg-skin .document.skn-mlt7  div.firstsection:before{background:;} .svg-skin .document.skn-mlu4  .left-box{background-color:;} .svg-skin .document.skn-mlu4  .left-box > .sortable-item .section,.svg-skin .document.skn-mlu4  .left-box > .sortable-item .paragraph{background-color:;} .svg-skin .document.skn-mlu4 .inner-rating{background-color:} .svg-skin .document.skn-mlu5  div.name, .svg-skin .document.skn-mlu5  .right-box div.sectiontitle{color:;} .svg-skin .document.skn-mlu6  .right-box,.svg-skin .document.skn-mlu6  .right-box > .sortable-item .section, .svg-skin .document.skn-mlu6  .right-box >.sortable-item .paragraph{background-color:;} .svg-skin .document.skn-mlu7  div.name, .svg-skin .document.skn-mlu7  div.sectiontitle{color:;} .svg-skin .document.skn-mna4  div.sectiontitle{color:;} .svg-skin .document.skn-mna4 div.name{color:;} .svg-skin .document.skn-mna4 .monogram svg rect{stroke:;} .svg-skin .document.skn-mna4 .monogram svg text{fill:;} .svg-skin .document.skn-mpa5 div.name{border-color:;color:;} .svg-skin .document.skn-mpa5  .smryWrap{border-color:;border-bottom-color:;} .svg-skin .document.skn-mpa6  .fName{color: !important;} .svg-skin .document.skn-mpa6 .inner-rating{background-color:} .svg-skin .document.skn-mta1  div.name, .svg-skin .document.skn-mta1 div.address, .svg-skin .document.skn-mta1  div.adnlLnks ul li, .svg-skin .document.skn-mta1  div.sectiontitle, .svg-skin .document.skn-mta1 span.jobdates, .svg-skin .document.skn-mta1 span.degree, .svg-skin .document.skn-mta1 span.jobtitle{color:;} .svg-skin .document.skn-mta2  div.name, .svg-skin .document.skn-mta2 div.address, .svg-skin .document.skn-mta2  div.adnlLnks ul li, .svg-skin .document.skn-mta2  div.sectiontitle, .svg-skin .document.skn-mta2 span.jobdates, .svg-skin .document.skn-mta2 span.degree, .svg-skin .document.skn-mta2 span.jobtitle{color:;} .svg-skin .document.skn-mta3  div.name, .svg-skin .document.skn-mta3  div.sectiontitle{color:;} .svg-skin .document.skn-mta3  .prflSection, .svg-skin .document.skn-mta3  .prflWrapper{border-color:;} .svg-skin .skn-oxa1 div.name,.svg-skin .skn-oxa1 div.resumeTitle{background-color:;} .svg-skin .skn-oxa1  .lgtBg{background-color:;opacity:0.2;} .svg-skin .document.skn-pca1 div.name,.svg-skin .document.skn-pca1 div.resumeTitle{background-color:;} .document.skn-pca1 .thinbottomborder, .document.skn-pca1 .lowerborder{border-color:} .skn-pca1.document div.address{background-color:} .svg-skin .document.skn-pca1 .lgtBg:before{background-color:;opacity:0.2;} .svg-skin .document.skn-sma1  div.name, .svg-skin .document.skn-sma1  div.sectiontitle{color:;} .svg-skin .document.skn-sma2  div.heading{background-color:;} .svg-skin .document.skn-tma3  .section{border-color:;} .svg-skin .document.skn-tma3  .heading{color:;} .svg-skin .document.skn-tma3  div.heading:before{border-color:;} .svg-skin .document.skn-tma4  div.name, .svg-skin .document.skn-tma4  div.sectiontitle, .svg-skin .document.skn-tma4  .jobtitle{color:;} .svg-skin .document.skn-tma4  .monogram svg circle{stroke:;} .svg-skin .document.skn-upa1  div.heading{border-color: !important;} .svg-skin .document.skn-upa1 div.name span.lName{color:;} .svg-skin .document.skn-upa2  div.heading{border-color: !important;} .svg-skin .document.skn-upa2  div.name span.lName{color:;} .svg-skin .document.skn-mlf3  .parentContainer .left-box:before{background-color:;} .svg-skin .document.skn-mlf2:before,.svg-skin .document.skn-mlf2 .right-box .section .heading:before,.svg-skin .document.skn-mlf2 .parentContainer .right-box{border-color:} .svg-skin .document.skn-mlf2 .sectionadrs{background:} .svg-skin .document.skn-mlf2 .inner-rating{background-color:} .svg-skin .document.skn-mlf2 .sectionadrs .sortable-item .section{background:} .svg-skin .document.skn-mlf2 .resumeTitle{color:} .svg-skin .skn-mlf1 .name{color:}   .svg-skin .skn-mlf1 .topsection,.svg-skin .skn-mlf1 .parentContainer .section,.svg-skin .skn-mlf1 .heading:before{border-color:} .svg-skin .skn-mlf1 .topshape{fill:} .svg-skin .skn-mlf1 .iconRow svg path.rect{fill:} .svg-skin .document.skn-mlf6 .name,.svg-skin .document.skn-mlf6 .sectiontitle,.svg-skin .document.skn-mlf6 .section .heading:before,.svg-skin .document.skn-mlf6 .parentContainer .paragraph:not(.firstparagraph):before,.svg-skin .document.skn-mlf6 .parentContainer .experience .firstparagraph:before,.svg-skin .document.skn-mlf6 .parentContainer .education .firstparagraph:before{color:} .svg-skin .document.skn-mlf6 .section .heading:before,.svg-skin .document.skn-mlf6 .parentContainer .experience .paragraph:before,.svg-skin .document.skn-mlf6 .parentContainer .education .paragraph:before{background:} .svg-skin .document.skn-mlf5 .name,.svg-skin .document.skn-mlf5 .sectiontitle{color:} .svg-skin .document.skn-mlf5 .inner-rating{background-color:} .svg-skin .document.skn-mlf5 .PICTPic img{border-color:} .svg-skin .document.skn-mlf4 .lang-sec.infobarsec .inner-rating, .svg-skin .document.skn-mlf4 .skli-sec.infobarsec .inner-rating{background-color:} .svg-skin .document.skn-mlf4 .topbg svg path{fill:} .svg-skin .document.skn-mlf4 .section .heading{border-color:} .svg-skin .document.skn-mli2 .sectiontitle , .svg-skin .document.skn-mli2 .name , .svg-skin .document.skn-mli2 .resumeTitle{color:} .svg-skin .document.skn-mli2 .topsection:before ,.svg-skin .document.skn-mli2 .sectiontitle:after{background-color: }   .svg-skin .document.skn-mli3 .middlesection .left-box:before,.svg-skin .document.skn-mli3 .middlesection .right-box:before,.svg-skin .document.skn-mli3 .bottomsection{background:} .svg-skin .document.skn-sli1 .section{border-color:}.svg-skin .document.skn-sli1 .SECTION_NAME{background:;border-color:} .svg-skin .document.skn-sli1 .SECTION_CNTC, .svg-skin .document.skn-sli1 .SECTION_ALNK{padding-top:0!important;background:;border-color:} .svg-skin .document.skn-sli1 .heading{color:} .svg-skin .document.skn-sli1 .innerRating{background:} .svg-skin .document.skn-mli4 .topsection,.svg-skin .document.skn-mli4 .parentContainer .left-box:before,.svg-skin .document.skn-mli4 .parentContainer .right-box:before,.svg-skin .document.skn-mli4 .innerRating{background-color:} .svg-skin .document.skn-mli4 .topsection .top-box{border-bottom:3px solid }  .svg-skin .document.skn-mli5 .name{color:} .svg-skin .document.skn-mli5 .left-box .sectiontitle{color:} .svg-skin .document.skn-mli5 .right-box{background-color:} .svg-skin .document.skn-mli5 .right-box .wrapper{background:} .svg-skin .document.skn-mli1 .name{color:} .svg-skin .document.skn-mli1 .left-box, .svg-skin .document.skn-mli1 .right-box .innerRating{background-color:} .svg-skin .document.skn-mlj1 .topsection .right-box, .svg-skin .document.skn-mlj1 .left-box:before, .svg-skin .document.skn-mlj1 .parentContainer .left-box:after, .svg-skin .document.skn-mlj1 .left-box .innerRating, .svg-skin .document.skn-mlj1 .innerRating{background:} .svg-skin .document.skn-mlj1 .parentContainer .right-box .section{border-bottom-color:} .svg-skin .document.skn-mlj2 .fname{color:} .svg-skin .document.skn-mlj1 .lang-sec.infobarsec .inner-rating{background-color:;} .svg-skin .document.skn-mlj2 .right-box .sectiontitle{color:} .svg-skin .document.skn-mlj2 .left-box{background-color:} .svg-skin .document.skn-mlj2 .left-box .wrapper{background:} .svg-skin .document.skn-mlj2 .right-box .section{border-color:} .svg-skin .document.skn-mlj2 .innerRating{background-color:} .svg-skin .document.skn-mlj2 .inner-rating{background-color:} .svg-skin .document.skn-mlj3 .innerRating{background-color:} .svg-skin .document.skn-mlj3 .inner-rating{background-color:} .svg-skin .document.skn-mlj3 .parentContainer:before, .svg-skin .document.skn-mlj3 .sectiontitle:after{background-color:} .svg-skin .document.skn-sli2 .SECTION_NAME, .svg-skin .document.skn-sli2 .SECTION_CNTC:before, .svg-skin .document.skn-sli2 .SECTION_ALNK:before{margin-top:0!important;padding-top:0!important;background:} .svg-skin .document.skn-sli2 .heading, .svg-skin .document.skn-sli2 .resumeTitle{color:} .svg-skin .document.skn-sli2 .innerRating, .svg-skin .document.skn-sli2 .section:before{background:} .svg-skin .document.skn-mlj6 .left-box{background:;width:{$LBOX}px}/**/ .svg-skin .document.skn-mlj6 .name, .svg-skin .document.skn-mlj6 .right-box .heading .sectiontitle, .svg-skin .document.skn-mlj6 .right-box ul li:before{color:} .svg-skin .document.skn-mlj6 .PICTPic img{border-color:} .svg-skin .document.skn-mlj8 .prflPic:before{border-left-color:} .svg-skin .document.skn-mlj8 .resumeTitle{font-size:{$RTTL}px;color:} .svg-skin .document.skn-mlj8 .innerRating, .svg-skin .document.skn-mlj8 .parentContainer .left-box:before, .svg-skin .document.skn-mlj8 .parentContainer .left-box:after, .svg-skin .document.skn-mlj8 .topsection .right-box:before, .svg-skin .document.skn-mlj8 .topsection .PARAGRAPH_NAME:before{background-color:} .svg-skin .document.skn-mlj4 .topsection .right-box, .svg-skin .document.skn-mlj4 .left-box:before, .svg-skin .document.skn-mlj4 .parentContainer .left-box:after{background:} .svg-skin .document.skn-mlj4 .parentContainer .right-box .section{border-top-color:} .svg-skin .document.skn-mlj4 .prflPic:before{border-left-color:} @-moz-document url-prefix() { .svg-skin .document.skn-mlj4 .prflPic:before{border-left-color:transparent !important} } .svg-skin .document.skn-mlj4 .locationGap{color:} .svg-skin .document.skn-mlj4 .innerRating{background-color:} .svg-skin .document.skn-mlj4 .sortable-item.active .prflPic .field:after{content: '';width: 0px;height: 0px;position: absolute;border-top: 159px solid transparent;border-bottom: 159px solid transparent;border-right: 159px solid ;opacity:.25;top:-18px;right:61px;transform: rotate(-45deg);z-index:-1} .svg-skin .document.skn-mlj4 .sortable-item .prflPic:before{border-top-color:} .svg-skin .skn-mlj4 .lang-sec.infobarsec .inner-rating, .svg-skin .skn-mlj4 .skli-sec.infobarsec .inner-rating{background-color:;} .svg-skin .document.skn-mlj7 .address .iconSvg path{fill:} .svg-skin .document.skn-mlj7 .parentContainer .right-box .section:after{border-bottom-color:} .svg-skin .document.skn-mlj7 .resumeTitle{font-size:{$RTTL}px;line-height:{$RTLH}px;color:} .svg-skin .document.skn-mlj7 .innerRating, .svg-skin .document.skn-mlj7 .topsection .left-box .section:first-child .paragraph, .svg-skin .document.skn-mlj7 .left-box:before, .svg-skin .document.skn-mlj7 .parentContainer .left-box:after, .svg-skin .document.skn-mlj7 .topsection .right-box:before, .svg-skin .document.skn-mlj7 .left-box .innerRating{background-color:} .svg-skin .document.skn-mlj7 .sortable-item .SECTION_PICT .paragraph{background-color:} .svg-skin .document.skn-mli6:before,.svg-skin .document.skn-mli6 .right-box .section .heading:before,.svg-skin .document.skn-mli6 .parentContainer .right-box{border-color: !important} .svg-skin .document.skn-mli6 .sectionadrs{background:} .svg-skin .document.skn-mli6 .sectionadrs .sortable-item .section{background:} .svg-skin .document.skn-mli6 .resumeTitle{color:} .svg-skin .document.skn-mlj5 .SECTION_NAME{background:} .svg-skin .document.skn-mlj5 .SECTION_CNTC:before, .svg-skin .document.skn-mlj5 .SECTION_ALNK:before{margin-top:0!important;padding-top:0!important;background:} .svg-skin .document.skn-mlj5 .heading, .svg-skin .document.skn-mlj5 .resumeTitle{color:} .svg-skin .document.skn-mlj5 .innerRating, .svg-skin .document.skn-mlj5 .topbox::before, .svg-skin .document.skn-mlj5 .bottombox .section:before{background:} .svg-skin .skn-mlj5 .lang-sec.infobarsec .inner-rating{background-color:} .svg-skin .skn-mlk1 .middlesection:before, .svg-skin .skn-mlk1 .bottomsection{background:} .svg-skin .skn-mlk1 .innerRating{background-color:} .svg-skin .document.skn-mlk2 .topsection .right-box, .svg-skin .document.skn-mlk2 .left-box:before, .svg-skin .document.skn-mlk2 .parentContainer .left-box:after, .svg-skin .document.skn-mlk2 .topsection:before{background:} .svg-skin .document.skn-mlk2 .parentContainer .right-box .section{border-top-color:} .svg-skin .document.skn-mlk2 .topsection .left-box:empty:before{border-color:} .svg-skin .document.skn-mlk2 .prflPic:before{border-left-color:} .svg-skin .document.skn-mlk2 .locationGap{color:} .svg-skin .document.skn-mlk2 .innerRating{background-color:} .svg-skin .document.skn-mlk2 .sortable-item.active .prflPic .field:after{content: '';width: 0px;height: 0px;position: absolute;border-top: 159px solid transparent;border-bottom: 159px solid transparent;border-right: 159px solid ;opacity:.25;top:-18px;right:61px;transform: rotate(-45deg);z-index:-1} .svg-skin .document.skn-mlk3 .left-box:before{background:;width:{$LBOX}px}/**/ .svg-skin .document.skn-mlk3 .name, .svg-skin .document.skn-mlk3 .right-box .heading .sectiontitle, .svg-skin .document.skn-mlk3 .right-box ul li:before{color:} .svg-skin .document.skn-mlk3 .right-box .lang-sec.infobarsec .inner-rating,.svg-skin .document.skn-mlk3 .right-box .skli-sec.infobarsec .inner-rating, .svg-skin .document.skn-mlk3 .left-box .lang-sec.infobarsec .inner-rating, .svg-skin .document.skn-mlk3 .left-box .skli-sec.infobarsec .inner-rating{background-color:} .svg-skin .document.skn-mlk4 .address .iconSvg path{fill:} .svg-skin .document.skn-mlk4 .parentContainer .right-box .section:after{border-bottom-color:} .svg-skin .document.skn-mlk4 .resumeTitle{font-size:{$RTTL}px;line-height:{$RTLH}px;color:} .svg-skin .document.skn-mlk4 .innerRating, .svg-skin .document.skn-mlk4 .topsection .left-box .section:first-child .paragraph, .svg-skin .document.skn-mlk4 .left-box:before, .svg-skin .document.skn-mlk4 .parentContainer .left-box:after, .svg-skin .document.skn-mlk4 .topsection .right-box:before, .svg-skin .document.skn-mlk4 .left-box .innerRating{background-color:} .svg-skin .document.skn-mlk4 .sortable-item .SECTION_PICT .paragraph{background-color:} .svg-skin .document.skn-mlk5 .innerRating{background-color:} .svg-skin .document.skn-mlk5 .parentContainer:before, .svg-skin .document.skn-mlk5 .sectiontitle:after{background-color:} .svg-skin .skn-mlk6 .SECTION_NAME{background:} .svg-skin .skn-mlk6 .SECTION_CNTC:before, .svg-skin .skn-mlk6 .SECTION_ALNK:before{margin-top:0!important;padding-top:0!important;background:} .svg-skin .skn-mlk6 .heading, .svg-skin .skn-mlk6 .resumeTitle{color:} .svg-skin .skn-mlk6 .innerRating, .svg-skin .skn-mlk6 .topbox::before, .svg-skin .skn-mlk6 .bottombox .section:before{background:} .svg-skin .document.skn-mlk7 .fname, .svg-skin .document.skn-mlk7 .right-box .sectiontitle{color:} .svg-skin .document.skn-mlk7 .left-box{background-color:} .svg-skin .document.skn-mlk7 .left-box .wrapper{background:} .svg-skin .document.skn-mlk7 .right-box .section{border-color:} .svg-skin .document.skn-mlk7 .innerRating{background-color:} .svg-skin .document.skn-mlk8 .topsection, .svg-skin .document.skn-mlk8 .parentContainer .left-box:before, .svg-skin .document.skn-mlk8 .parentContainer .right-box:before, .svg-skin .document.skn-mlk8 .innerRating{background-color:} .svg-skin .document.skn-mlk8 .top-box{border-bottom:3px solid } .svg-skin .document.skn-mlm8 .parent-container .right-box > .section:first-child:before,.svg-skin .document.skn-mlm8 .parent-container .right-box > .sortable-item:first-child .section:before,.svg-skin .document.skn-mlm8 .left-box .inner-rating,.svg-skin .document.skn-mlm8 .inner-rating{background:} .svg-skin .document.skn-mlm8 .inner-rating{background-color:} .svg-skin .document.skn-mld3 .name-sec:before{background:} .svg-skin .document.skn-mld2 .top-section,.svg-skin .document.skn-mld2 .monogram:before{border-color:}.svg-skin .document.skn-mld2 .resume-title,.svg-skin .document.skn-mld2 .monogram .monotxt{color:} .svg-skin .document.skn-mld2 .inner-rating{background-color:} .svg-skin .document.skn-mld6 .right-box .section:before, .svg-skin .document.skn-mld6 .section:before{background:linear-gradient(to right,  53.5%, #000 46.5%)} .svg-skin .document.skn-mld6 .inner-rating{background-color:} .svg-skin .document.skn-sli1 .lang-sec.infobarsec .inner-rating{background-color:} .svg-skin .document.skn-mli5 .left-box .inner-rating{background-color:} .svg-skin .document.skn-cba2 .inner-rating{background-color:} .svg-skin .document.skn-mli4 .inner-rating{background-color:} .svg-skin .document.skn-mlm8 .lang-sec.infobarsec .inner-rating{background:} .svg-skin .document.skn-mlf6 .lang-sec.infobarsec .inner-rating{background:} .svg-skin .document.skn-mld5 .lang-sec.infobarsec .inner-rating{background:} .svg-skin .document.skn-mlm1 .lang-sec.infobarsec .inner-rating{background:} .svg-skin .document.skn-mlm3 .lang-sec.infobarsec .inner-rating{background:} .svg-skin .document.skn-mlm4 .lang-sec.infobarsec .inner-rating{background:} .svg-skin .document.skn-mld6 .lang-sec.infobarsec .inner-rating{background:} .svg-skin .document.skn-mli2 .inner-rating{background:} .svg-skin .document.skn-cba1 .inner-rating{background:} .svg-skin .document.skn-mli6 .innerRating{background-color:} .svg-skin .skn-mlf1 .lang-sec.infobarsec .inner-rating{background-color:} .svg-skin .document.skn-mli3 .innerRating{background-color:;} .svg-skin .document.skn-tma4 .inner-rating{background-color:;} .svg-skin .document.skn-hra1 .inner-rating{background-color:}.svg-skin .document.skn-mlu7 .innerRating{background-color:} .svg-skin .document.skn-ata1 .inner-rating{background-color:} .svg-skin .document.skn-lca1 .inner-rating{background-color:} .svg-skin .document.skn-mlt6 .inner-rating{background-color:} .svg-skin .document.skn-mla7 .innerRating{background-color:} .svg-skin .document.skn-hra2 .inner-rating{background-color:} .svg-skin .document.skn-mpa5 .inner-rating{background-color:} .svg-skin .document.skn-tma3 .inner-rating{background-color:} .svg-skin .document.skn-mta3 .inner-rating{background-color:} .svg-skin .document.skn-upa1 .inner-rating{background-color:} .svg-skin .document.skn-sma1 .inner-rating{background-color:} .svg-skin .document.skn-mna4 .inner-rating{background-color:} .svg-skin .document.skn-cna1 .inner-rating{background-color:} .svg-skin .document.skn-sma2 .inner-rating{background-color:} .svg-skin .document.skn-pca1.PCA1 .inner-rating{background-color:} .svg-skin .document.skn-mca2 .lang-sec.infobarsec .inner-rating{background-color:} .svg-skin .document.skn-mta2 .inner-rating{background-color:} .svg-skin .document.skn-ima1 .inner-rating{background-color:} .svg-skin .document.skn-upa2 .inner-rating{background-color:} .svg-skin .document.skn-lca1 .address:last-child{border-color:} .svg-skin .document.skn-mlm7 .lang-sec.infobarsec .inner-rating{background-color:} .svg-skin .document.skn-mle2 .resumeTitle{color:} .svg-skin .document.skn-mle2 .sectiontitle{color:} .svg-skin .document.skn-mle2 .icon-svg svg path{fill:} .svg-skin .document.skn-mle2 .dynamicIcon svg{fill:} .svg-skin .document.skn-mle2 .monogram svg text{fill:} .svg-skin .document.skn-mle2 .lang-sec.infobarsec .inner-rating{background-color:} .svg-skin .document.skn-mle2 .paragraph .sliced-rect .sliced-rect-tile.ratvfill{background-color:} .svg-skin .document.skn-mlt9 .topsection:before{background:;} .svg-skin .document.skn-mlt9 .paragraph .sliced-rect .sliced-rect-tile.ratvfill{background-color:} .svg-skin .document.skn-mlt9 .lang-sec.infobarsec .inner-rating{background-color:} .svg-skin .document.skn-mla3:before{background-color:} .svg-skin .skn-mls8 .name{color:;} .svg-skin .skn-mls8 .sectiontitle{color:} .svg-skin .skn-mls8 .top-section .monogram-wrap{background:;} .svg-skin .skn-mls8 .prfl-pic{background:;} .svg-skin .skn-mls8 .name-wrap{background:} .svg-skin .skn-mls8 .top-section .monogram-wrap,.skn-mls8 .top-section .prfl-pic{background-color:} .svg-skin .skn-mls8 .lang-sec.infobarsec .inner-rating,.skn-mls8 .skli-sec.infobarsec .inner-rating{background-color:} .svg-skin .skn-mls8 .paragraph .sliced-rect .sliced-rect-tile.ratvfill{background-color:} .svg-skin .skn-mls8 .name{color:;} .svg-skin .skn-mls8 .sectiontitle{color:} .svg-skin .skn-mls8 .top-section .monogram-wrap{background:;} .svg-skin .skn-mls8 .prfl-pic{background:;} .svg-skin .skn-mls8 .name-wrap{background:} .svg-skin .skn-mls8 .top-section .monogram-wrap,.skn-mls8 .top-section .prfl-pic{background-color:} .svg-skin .skn-mls8 .lang-sec.infobarsec .inner-rating,.skn-mls8 .skli-sec.infobarsec .inner-rating{background-color:} .svg-skin .skn-mls8 .paragraph .sliced-rect .sliced-rect-tile.ratvfill{background-color:} .svg-skin .skn-mls9 .topsection .left-box::before{background:linear-gradient(to right ,  {$R010}px, #fff {$R010}px);} .svg-skin .skn-mls9 .topsection .left-box::after,.skn-mls9 .topsection::before{background:} .svg-skin .skn-mlv4 .name{color:} .svg-skin .skn-mlv4 .lang-sec .inner-rating,.skn-mlv4 .skli-sec .inner-rating{background:} .svg-skin .skn-mlv4 .prfl-pic .field,.skn-mlv4 .monogram{background-color:} .svg-skin .skn-mlv4 .monogram .svg-box{background-color:} .svg-skin .skn-mlv4 .monogram svg text{fill:}    .svg-skin .skn-mlv4 .color-svg{fill:!important}  .svg-skin .skn-mlv4 .lang-sec.infobarsec .inner-rating,.skn-mlv4 .skli-sec.infobarsec .inner-rating{background-color:} .svg-skin .skn-mlv4 .paragraph .sliced-rect .sliced-rect-tile.ratvfill{background-color:} .svg-skin .skn-mlv4 .top-circle{fill:;} .svg-skin .skn-mlv4 .top-circle-small{fill:;} .svg-skin .skn-mlv4 .jobtitle,.svg-skin .skn-mlv4 .school{color:;}.svg-skin .document.skn-cbg1 .name{color:}
               .svg-skin .document.skn-cbg1 .lowerborder {color:}
               .svg-skin .document.skn-cbg1 .sectiontitle{color:}
@@ -5575,10 +5322,6 @@
                        .svg-skin .document.skn-trz5 .resumeTitle,.svg-skin .document.skn-trz5 .sectiontitle{color:}.svg-skin .document.skn-trz5 .name{color:}.svg-skin .document.skn-trz5 .headingIcon svg rect{fill:}.svg-skin .document.skn-trz5 .innerRating{background-color:}.svg-skin .document.skn-trz5 .common-lngg-skli .sliced-rect .sliced-rect-tile.ratvfill{background-color:}
                        .svg-skin .document.skn-trz8 .name,.svg-skin .document.skn-trz8 .resumeTitle,.svg-skin .document.skn-trz8 .sectiontitle{color:}.svg-skin .document.skn-trz8 .rating-wrapper .default-fill{fill:}.svg-skin .document.skn-trz8 .common-lngg-skli .sliced-rect .sliced-rect-tile.ratvfill{background-color:}
             </style>
-            <div class="vulnerable-text-warning-ctnr d-none" id="vulnerableMsg">
-              Some unsupported characters identified. Please remove or it will
-              be saved without that.
-            </div>
           </section>
         </div>
         <div id="dvHidden" style="display: none"></div>
@@ -5588,7 +5331,6 @@
           <div class="template-theme">
             <img src="./src/cbg1.svg" alt="Skin Images" />
           </div>
-          <div class="loader-overlay"></div>
         </div>
       </section>
     </form>
